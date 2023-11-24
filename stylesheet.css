@@ -1,0 +1,209 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Outfit";
+        }
+
+
+        body{
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #8BC6EC;
+            background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+
+        }
+
+        .container{
+            
+            width: 100%;
+            max-width: 100%;
+            padding: 5px 30px 15px;
+            border: 1px solid black;
+            border-radius: 5px;
+            background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 24%);
+            
+            
+        }
+
+        /*-------------------js-search container-----------------*/
+        .js-search{
+        
+            width: 100%;
+            max-width: 100%;
+            align-items: center;
+            display: flex;
+            justify-content: space-around;
+            margin: 15px 0 30px;
+            gap: 10px;
+        
+        }
+
+        .js-search input{
+            width: 100%;
+            border-radius: 5px;
+            padding: 10px 20px;
+            border: none;
+        }
+
+
+        .js-search button {
+            display: flex;
+            padding: 12px;
+            margin-left: 10px;
+            border-radius: 20px;
+            text-align: center;
+            justify-content: center;
+            border: none;
+            cursor: pointer;
+            background-color: #fff;
+            transition: 400ms;
+        }
+
+        #js-button:hover {
+            background-color: #eee;
+            
+        }
+
+
+        /*-----------------js-error container-------------------*/
+
+        .js-error {
+            margin: 5px 0 0 10px ;
+        }
+
+        .js-error p {
+            font-weight: bold;
+            color: red;
+        }
+
+        /*-----------------------js-temp------------------*/
+
+        .js-temp{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: -3rem 0 1rem;
+            font-weight: bold;
+            font-size: 5em;
+        }
+
+        /*-----------js-weather-data1 container-----------*/
+
+        .js-weather-data1 {
+            display: none;
+        }      
+
+        .js-image {
+          
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 0 35px;
+            
+        }
+
+        .js-image img{
+            max-width: 50%;
+            height: 120px;
+        }
+
+
+
+        .js-name{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: -20px 0 30px ;
+            font-weight:300;
+            font-size: 3em;
+        }
+
+
+        /*----------js-weather-data2 container--------------*/
+        .js-weather-data2{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-bottom: 15px;
+
+        }
+
+        .js-humidity{
+            display: flex;
+            align-items: center;
+            
+        }
+
+        .js-humidity ,#humidity-info {
+            text-align: center;
+            justify-content: space-between;
+            margin-left: 8px;
+            font-weight: bold;
+        }
+        
+
+        .js-wind-speed{
+            display: flex;
+            align-items: center;
+        
+        }
+
+       .js-wind-speed ,#wind-info {
+            text-align: center;
+            justify-content: space-between;
+            margin-left: 8px;
+            font-weight: bold;
+       }
+
+
+
+       
+
+
+
+
+        /*-------------------media query for phone-------------*/
+
+        @media only screen and (max-width: 600px) {
+
+            .container{
+                max-width: 100%;
+                
+            }
+
+            .js-search{
+                display: flex;
+            }
+            
+            .js-search input {
+                max-width: 100%;
+               
+            }
+
+            
+            .js-image{
+                margin: -10px 0 10px ;  
+            }
+
+            .js-temp, .js-name {
+                margin-top: 5px;
+                font-size: 2.2rem;
+                gap: 5px;
+            }
+
+            .js-weather-data2 {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+                justify-content: center;
+            }
+            
+        }
+
+
+            
